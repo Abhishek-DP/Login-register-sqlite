@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="406dp"
+        android:layout_height="480dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="126dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@android:style/Animation.Toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SIGNUP ACTIVITY"
+            android:textSize="33dp" />
+
+        <TableLayout
+            android:layout_width="329dp"
+            android:layout_height="344dp"
+            android:layout_centerInParent="true"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/username_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Username" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:ems="10"
+                    android:inputType="text" />
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/password_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Password" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:ems="10"
+                    android:inputType="textPassword" />
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/repassword_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Re-Password" />
+
+                <EditText
+                    android:id="@+id/repassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:ems="10"
+                    android:inputType="textPassword" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="15dp"/>
+
+            <TableRow
+                android:layout_marginTop="15dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/border"
+                    android:text="Signup" />
+
+            </TableRow>
+            <TableRow android:layout_marginTop="15dp"/>
+            <TableRow android:layout_marginTop="15dp"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="Signin" />
+
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
